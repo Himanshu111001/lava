@@ -256,6 +256,7 @@
 #dashboard-click {
   display: none;
 }
+
 // responsive
 @media (max-width: 1024px) {
   .menu-btn i {
@@ -272,16 +273,28 @@
     position: fixed;
     display: block;
     top: 70px;
-    width: 100%;
+    width: 40%;
     height: 100vh;
     left: -100%;
     text-align: center;
-    background-color: #1b1b1b;
+    background-color: black;
     transition: all 0.3s ease;
   }
   .nav__links li {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
+  }
+  .nav__links li:hover {
+    color: black;
+    background-color: white;
+  }
+  .nav__user {
+    position: fixed;
+    bottom: 0;
+    font-size: 15px;
+  }
+  .nav__user i {
+    border: 1px solid white;
   }
   #click:checked ~ .nav__links {
     left: 0%;
@@ -368,6 +381,9 @@
           overflow: hidden;
           max-height: 0px;
           transition: max-height 0.5s, padding 0.5s;
+        }
+        .content p {
+          margin-left: 30px;
         }
       }
     }
