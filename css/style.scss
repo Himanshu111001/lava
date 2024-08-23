@@ -416,5 +416,9 @@
         }
       }
     }
+    .footer-accordion li:last-child .content {
+      display: flex;
+      font-size: 18px;
+    }
   }
 }

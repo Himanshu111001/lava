@@ -402,4 +402,8 @@
   .footer .footer-accordion li .content p {
     margin-left: 30px;
   }
+  .footer .footer-accordion li:last-child .content {
+    display: flex;
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=style.css.map */
