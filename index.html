@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lava</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/fcce8be489.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <!-- NAVBAR start -->
 
     <nav class="nav">
 
@@ -16,10 +19,14 @@
             <img src="./images/logo.png" alt="">
         </div>
 
+        <!-- HAMBURGER BUTTON start -->
+
         <input id="click" type="checkbox">
         <label class="menu-btn" for="click">
             <i id="" class="fas fa-bars"></i>
         </label>
+
+        <!-- HAMBURGER BUTTON end -->
 
         <ul class="nav__links">
             <li>Home</li>
@@ -34,12 +41,22 @@
 
     </nav>
 
+    <!-- NAVBAR end -->
+
+    <!-- HERO start -->
+
     <main class="hero">
+
+        <!-- DASHBOARD ARROW BUTTON start -->
 
         <input id="dashboard-click" type="checkbox">
         <label class="dashboard-menu-btn" for="dashboard-click">
             <i class="fa-solid fa-arrow-right"></i>
         </label>
+
+        <!-- DASHBOARD ARROW BUTTON end -->
+
+        <!-- HERO LEFT DASHBOARD start -->
 
         <article class="hero__left">
 
@@ -73,13 +90,25 @@
             </div>
         </article>
 
+        <!-- HERO LEFT DASHBOARD end -->
+
+        <!-- HERO RIGHT start -->
+
         <section class="hero__right">
+
+            <!-- BREADCRUMB start -->
+
             <ul class="hero__right--breadcrumb">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Phone</a></li>
                 <li>Yuva 5g</li>
             </ul>
+
+            <!-- BREADCRUMB end -->
+
+            <!-- MAIN PRODUCT start -->
+
             <div class="hero__right--product-container">
 
                 <div class="hero__right--product-details">
@@ -132,78 +161,131 @@
                 </div>
             </div>
 
-            <h2 class="hero__right--card-container-title">Related Products</h2>
-
-            <div class="hero__right--card-container">
-
-                <div class="hero__right--card">
-                    <div class="hero__right--card-img"">
-                        <img src=" ./images/buds.jpg" alt="">
-                    </div>
-                    <div class="hero__right--card-description">
-                        <h3 class="hero__right--card-title">ProBuds</h3>
-                        <p class="hero__right--card-detail">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil quaerat suscipit
-                        </p>
-                    </div>
-                    <button class="hero__right--card-button">Read more</button>
-                </div>
-
-                <div class="hero__right--card">
-                    <div class="hero__right--card-img"">
-                         <img src=" ./images/blazex.jfif" alt="">
-                    </div>
-                    <div class="hero__right--card-description">
-                        <h3 class="hero__right--card-title">BlazeX</h3>
-                        <p class="hero__right--card-detail">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil quaerat suscipit
-                        </p>
-                    </div>
-                    <button class="hero__right--card-button">Read more</button>
-                </div>
-
-                <div class="hero__right--card">
-                    <div class="hero__right--card-img"">
-                         <img src=" ./images/keypad.jfif" alt="">
-                    </div>
-                    <div class="hero__right--card-description">
-                        <h3 class="hero__right--card-title">A1 Colors 21</h3>
-                        <p class="hero__right--card-detail">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil quaerat suscipit
-                        </p>
-                    </div>
-                    <button class="hero__right--card-button">Read more</button>
-                </div>
-
-                <div class="hero__right--card">
-                    <div class="hero__right--card-img"">
-                                        <img src=" ./images/buds.jpg" alt="">
-                    </div>
-                    <div class="hero__right--card-description">
-                        <h3 class="hero__right--card-title">ProBuds</h3>
-                        <p class="hero__right--card-detail">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil quaerat suscipit
-                        </p>
-                    </div>
-                    <button class="hero__right--card-button">Read more</button>
-                </div>
-
-                <div class="hero__right--card">
-                    <div class="hero__right--card-img"">
-                                         <img src=" ./images/blazex.jfif" alt="">
-                    </div>
-                    <div class="hero__right--card-description">
-                        <h3 class="hero__right--card-title">BlazeX</h3>
-                        <p class="hero__right--card-detail">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil quaerat suscipit
-                        </p>
-                    </div>
-                    <button class="hero__right--card-button">Read more</button>
-                </div>
-
-            </div>
+            <!-- MAIN PRODUCT end -->
         </section>
+
+        <!-- HERO RIGHT end -->
+
     </main>
+
+    <!-- HERO end -->
+
+    <!-- RELATED PRODUCTS start -->
+
+    <h2 class="related-product--title">Related Products</h2>
+
+    <!-- CARD CONTAINER start -->
+
+    <div class="related-product--container">
+
+        <!-- POPUP start -->
+
+        <div class="related-product--popup" id="popup">
+            <div class="related-product--popup-content">
+                <h2 class="related-product--popup-title">LAVA</h2>
+                <p class="related-product--popup-detail">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consectetur ullam! Porro
+                    quibusdam pariatur nemo ducimus officia, asperiore
+                </p>
+                <button onclick="closePopup()" type="button" class="related-product--popup-btn"
+                    type="button">OK</button>
+            </div>
+        </div>
+
+        <!-- POPUP end -->
+
+        <!-- CARD 1 start -->
+
+        <div class="related-product--card">
+            <div class="related-product--card-img"">
+                <img src=" ./images/buds.jpg" alt="">
+            </div>
+            <div class="related-product--card-description">
+                <h3 class="related-product--card-title">ProBuds</h3>
+                <p class="related-product--card-detail">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil quaerat suscipit
+                </p>
+            </div>
+            <button onclick="openPopup()" type="submit" class="related-product--card-button">Read more</button>
+        </div>
+
+        <!-- CARD 1 end  -->
+
+        <!-- CARD 2 start -->
+
+        <div class="related-product--card">
+            <div class="related-product--card-img"">
+                             <img src=" ./images/blazex.jfif" alt="">
+            </div>
+            <div class="related-product--card-description">
+                <h3 class="related-product--card-title">BlazeX</h3>
+                <p class="related-product--card-detail">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil quaerat suscipit
+                </p>
+            </div>
+            <button onclick="openPopup()" type="submit" class="related-product--card-button">Read more</button>
+        </div>
+
+        <!-- CARD 2 end -->
+
+        <!-- CARD 3 start -->
+
+        <div class="related-product--card">
+            <div class="related-product--card-img"">
+                             <img src=" ./images/keypad.jfif" alt="">
+            </div>
+            <div class="related-product--card-description">
+                <h3 class="related-product--card-title">A1 Colors 21</h3>
+                <p class="related-product--card-detail">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil quaerat suscipit
+                </p>
+            </div>
+            <button onclick="openPopup()" type="submit" class="related-product--card-button">Read more</button>
+        </div>
+
+        <!-- CARD 3 end -->
+
+        <!-- CARD 4 start -->
+
+        <div class="related-product--card">
+            <div class="related-product--card-img"">
+                            <img src=" ./images/buds.jpg" alt="">
+            </div>
+            <div class="related-product--card-description">
+                <h3 class="related-product--card-title">ProBuds</h3>
+                <p class="related-product--card-detail">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil quaerat suscipit
+                </p>
+            </div>
+            <button onclick="openPopup()" type="submit" class="related-product--card-button">Read more</button>
+        </div>
+
+        <!-- CARD 4 end -->
+
+        <!-- CARD 5 start -->
+
+        <div class="related-product--card">
+            <div class="related-product--card-img"">
+                            <img src=" ./images/blazex.jfif" alt="">
+            </div>
+            <div class="related-product--card-description">
+                <h3 class="related-product--card-title">BlazeX</h3>
+                <p class="related-product--card-detail">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil quaerat suscipit
+                </p>
+            </div>
+            <button onclick="openPopup()" type="submit" class="related-product--card-button">Read more</button>
+        </div>
+
+        <!-- CARD 5 end -->
+
+    </div>
+
+    <!-- CARD CONTAINER end  -->
+
+    <!-- RELATED PRODUCT end -->
+
+    <!-- FOOTER start -->
 
     <footer class="footer">
         <ul class="footer-accordion">
@@ -262,8 +344,17 @@
         </ul>
     </footer>
 
+    <!-- FOOTER end -->
 
-    <script src="https://kit.fontawesome.com/fcce8be489.js" crossorigin="anonymous"></script>
+    <script>
+        let popup = document.getElementById("popup")
+        function openPopup() {
+            popup.style.display = "flex"
+        }
+        function closePopup() {
+            popup.style.display = "none"
+        }
+    </script>
 </body>
 
 </html>
